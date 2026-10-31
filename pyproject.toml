@@ -9,7 +9,7 @@ description = "TODO one-line description"
 readme = "README.md"
 requires-python = ">=3.13"
 license = { text = "MIT" }
-authors = [{ name = "TODO", email = "TODO" }]
+authors = [{ name = "TODO", email = "todo@example.com" }]
 dependencies = [
     "fastapi>=0.115",
     "uvicorn>=0.30",
@@ -21,7 +21,7 @@ dependencies = [
 dev = ["pytest", "pytest-cov", "httpx", "ruff"]
 
 [project.urls]
-Repository = "TODO"
+Repository = "https://example.com"
 
 [project.scripts]
 myapp = "myapp.api:main"
