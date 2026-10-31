@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools", "wheel", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "myapp"
+dynamic = ["version"]
+description = "TODO one-line description"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT" }
+authors = [{ name = "TODO", email = "TODO" }]
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn>=0.30",
+    "pydantic>=2.0",
+    "numpy",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov", "httpx", "ruff"]
+
+[project.urls]
+Repository = "TODO"
+
+[project.scripts]
+myapp = "myapp.api:main"
+
+[tool.setuptools]
+license-files = ["LICENSE"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["myapp*"]
+
+[tool.setuptools.package-data]
+myapp = ["static/*"]
+
+[tool.setuptools_scm]

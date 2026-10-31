@@ -1,0 +1,10 @@
+---
+name: Build and Check Docs
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+jobs:
+  docs:
+    uses: buchanankerswell/actions/.github/workflows/python-docs.yml@v1

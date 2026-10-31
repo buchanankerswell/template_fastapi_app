@@ -1,0 +1,8 @@
+/* TODO app styles. Canonical tokens and dialog chrome live in the vendored
+   tokens.css / dialogs.css (copies of actions/design/ at the pinned tag). */
+
+main {
+  max-width: 1368px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2rem;
+}

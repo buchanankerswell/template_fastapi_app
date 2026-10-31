@@ -1,0 +1,19 @@
+---
+name: Test and Release
+permissions:
+  contents: write
+  packages: write
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+jobs:
+  test-and-release:
+    uses: buchanankerswell/actions/.github/workflows/python-test-release.yml@v1
+    with:
+      package: myapp
+    secrets:
+      codecov-token: ${{ secrets.CODECOV_TOKEN }}
+      test-pypi-api-token: ${{ secrets.TEST_PYPI_API_TOKEN }}
+      pypi-api-token: ${{ secrets.PYPI_API_TOKEN }}

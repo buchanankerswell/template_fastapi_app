@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff" id="themeColor">
+<title>myapp</title>
+<link rel="stylesheet" href="/static/tokens.css">
+<link rel="stylesheet" href="/static/dialogs.css">
+<link rel="stylesheet" href="/static/app.css">
+<script src="/static/dialogs.js" defer></script>
+<script src="/static/app.js" defer></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand"><strong>myapp</strong><span>TODO tagline</span></div>
+    <div class="controls">
+      <!-- TODO: search box and domain controls -->
+      <a class="pill" href="TODO-docs-url" target="_blank" rel="noopener">Docs</a>
+      <button id="help_btn" class="pill" type="button" aria-label="Keyboard shortcuts and help">?</button>
+    </div>
+  </div>
+  <!-- TODO: tabs nav if the app has two main views -->
+</header>
+<main>
+  <!-- TODO: main views -->
+</main>
+
+<div id="help" class="help" hidden role="dialog" aria-modal="true" aria-label="Keyboard shortcuts and help">
+  <div class="help-card" tabindex="-1">
+    <h2>Shortcuts</h2>
+    <dl class="help-list">
+      <div>
+        <dt><kbd>?</kbd></dt>
+        <dd>Toggle this help</dd>
+      </div>
+      <div>
+        <dt><kbd>Esc</kbd></dt>
+        <dd>Close</dd>
+      </div>
+      <!-- TODO: app shortcuts -->
+    </dl>
+  </div>
+</div>
+</body>
+</html>
