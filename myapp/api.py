@@ -3,7 +3,6 @@
 from pathlib import Path
 
 from fastapi import FastAPI
-from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
 # TODO: domain models (see STANDARDS.md §3: keep data models domain-specific).
